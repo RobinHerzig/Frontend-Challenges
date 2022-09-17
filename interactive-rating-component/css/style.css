@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+  background: #141519;
+  color: rgb(255, 255, 255);
+  display: grid;
+  /*  Center rating box */
+  place-items: center;
+  /*  Center rating box */
+}
+
+.card {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 16px;
+  color: #939aa4;
+  margin: 1.5rem;
+  padding: 1.5em;
+  border-radius: .5em;
+  background: linear-gradient(#232a34, #171e28);
+  max-width: 20rem;
+}
+
+.card img {
+  margin: auto;
+  /*  Center rating box */
+  display: flex;
+  /*  Center rating box */
+  user-select: none;
+  /*  Disable highlighting text */
+}
+
+.card button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 16px;
+  color: #939aa4;
+}
+
+.card .imageContainer {
+  height: 3em;
+  width: 3em;
+  background: #273039;
+  border-radius: 50%;
+  display: grid;
+  /*  Center rating box */
+  place-items: center;
+  /*  Center rating box */
+}
+
+.card h1 {
+  font-size: 26px;
+  color: white;
+  font-weight: 500;
+  /* margin: 1em; */
+}
+
+.card ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.card li {
+  height: 3em;
+  width: 3em;
+  background: rgb(33, 40, 50);
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  /*  Center rating box */
+  place-items: center;
+  /*  Center rating box */
+  user-select: none;
+  /*  Disable highlighting text */
+}
+
+.card li:hover {
+  background: rgb(73, 80, 90);
+}
+
+.card button {
+  background-color: #fc7613;
+  color: white;
+  width: 100%;
+  padding: .5em 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  user-select: none;
+  /*  Disable highlighting text */
+}
+
+.card button:hover {
+  color: #fc7613;
+  background-color: white;
+}
+
+.card .selectedRating,
+.card .selectedRating:hover {
+  background-color: #fc7613;
+  color: white;
+}
+
+.card button.inactive {
+  background: rgb(33, 40, 50);
+  cursor: auto;
+  color: #939aa4;
+}
+
+.card .textContainer {
+  background: rgb(33, 40, 50);
+  color: #fc7613;
+  background: #273039;
+  border-radius: .5em;
+  margin: 1rem auto;
+  padding: 0 1em;
+  width: fit-content;
+  display: grid;
+  /*  Center rating box */
+  place-items: center;
+  /*  Center rating box */
+}
+
+.card .textContainer p {
+  margin: 0;
+}
+
+.card.hidden {
+  display: none;
+}
